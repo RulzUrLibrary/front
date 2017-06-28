@@ -1,0 +1,19 @@
+{
+  "books": [
+    {
+      "title": "The S.H.I.E.L.D.",
+      "subtitle": "The Strategic Homeland Intervention, Enforcement, and Logistics Division...",
+      "avatar": "img/avatar-1.png"
+    },
+    {
+      "title": "Lorem Ipsum",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit....",
+      "avatar": "img/avatar-2.png"
+    },
+    {
+      "title": "The Avengers",
+      "subtitle": "Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...",
+      "avatar": "img/avatar-3.png"
+    }
+  ]
+}
