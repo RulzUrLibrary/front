@@ -15,7 +15,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="app">
 
       <div class="columns">
 
@@ -59,53 +59,8 @@
             <h1 class="text-center column col-12">My Book Collection</h1>
           </div>
           <div class="columns">
-            <div class="column col-6">
-              <div class="tile">
-                <div class="tile-icon">
-                  <figure class="avatar avatar-lg">
-                    <img src="img/avatar-2.png">
-                  </figure>
-                </div>
-                <div class="tile-content">
-                  <p class="tile-title">The S.H.I.E.L.D.</p>
-                  <p class="tile-subtitle">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
-                  <p>
-                  <button class="btn btn-primary btn-sm">Join</button>
-                  <button class="btn btn-sm">Contact</button>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="column col-6">
-              <div class="tile">
-                <div class="tile-icon">
-                  <figure class="avatar avatar-lg">
-                    <img src="img/avatar-3.png">
-                  </figure>
-                </div>
-                <div class="tile-content">
-                  <p class="tile-title">The Avengers</p>
-                  <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
-                  <p>
-                  <button class="btn btn-primary btn-sm">Join</button>
-                  <button class="btn btn-sm">Contact</button>
-                  </p>
-                </div>
-              </div>
-            </div>
-<div class="column col-6">
-              <div id="app">
-                {{ message }}
-              </div>
-            </div>
-            <div class="column col-6">
-              <div id="app-2">
-                <span v-bind:title="message">
-                  Hover your mouse over me for a few seconds
-                  to see my dynamically bound title!
-                </span>
-              </div>
-            </div>
+            <book-tile v-for="book in books" :book="book" :key="book.id">
+            </book-tile>
           </div>
         </div>
       </div>
