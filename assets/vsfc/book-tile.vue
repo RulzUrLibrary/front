@@ -3,12 +3,12 @@
     <div class="tile">
       <div class="tile-icon">
         <figure class="avatar avatar-lg">
-          <img :src="book.avatar">
+          <img :src="book.thumbnail">
         </figure>
       </div>
       <div class="tile-content">
         <p class="tile-title">{{book.title}}</p>
-        <p class="tile-subtitle">{{book.subtitle}}</p>
+        <p class="tile-subtitle">{{book.description}}</p>
         <p>
         <button class="btn btn-primary btn-sm">Join</button>
         <button class="btn btn-sm">Contact</button>
